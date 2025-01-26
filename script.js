@@ -28,7 +28,6 @@ arrow_left.addEventListener("click", function () {
     counter = images.length - 1;
   }
   img.src = `${resourcesFolderName}/${images[counter]}.jpg`; 
-  figcaption.innerText = figcaptions.value[counter] // maybee remove the value
 });
 
 var preloadedImages = images.map(name => {
@@ -40,7 +39,6 @@ var preloadedImages = images.map(name => {
 img.onerror = function () {
   console.error("Failed to load image:", img.src);
   img.src = `${resourcesFolderName}/error.jpg`; 
-
 }
 
 // sidebar closing whe a link is clicked
