@@ -104,7 +104,7 @@ body {
   width: 15rem;
   z-index: 2;
   position: fixed;
-  min-height: 100vw;
+  height: 100vh;
 }
 
 .hamburger-menu:has(input:checked)+.sidebar {
@@ -203,9 +203,12 @@ section {
     max-width: 70vw;
     font-size: 0.8rem
   }
-  #player-title {
-    max-width: 600px;
+
+  #copyright {
+    text-align: left;
   }
+
+
 }
 
 
