@@ -11,6 +11,7 @@ img.src = `${resourcesFolderName}/1.jpg`;
 
 var counter = 0;
 var images = ["1", "2", "3", "4"]; 
+var figcaptions = ["1", "2", "3", "4"]
 
 arrow_right.addEventListener("click", function () {
   counter += 1;
@@ -18,6 +19,8 @@ arrow_right.addEventListener("click", function () {
     counter = 0; 
   }
   img.src = `${resourcesFolderName}/${images[counter]}.jpg`; 
+  figcaption.innerText = figcaptions[counter];
+
 });
 
 arrow_left.addEventListener("click", function () {
@@ -26,6 +29,7 @@ arrow_left.addEventListener("click", function () {
     counter = images.length - 1;
   }
   img.src = `${resourcesFolderName}/${images[counter]}.jpg`; 
+  figcaption.innerText = figcaptions[counter];
 });
 
 var preloadedImages = images.map(name => {
