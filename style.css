@@ -203,7 +203,11 @@ section {
     max-width: 70vw;
     font-size: 0.8rem
   }
+  #player-title {
+    max-width: 600px;
+  }
 }
+
 
 .text-left,
 .text-right {
