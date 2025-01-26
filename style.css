@@ -12,6 +12,8 @@
   --transition-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  --padding-section: calc(var(hamburger-width) + var(hamburger-margin) * 2)
+  --padding-h2: 20px;
 }
 
 /* Global Resets */
@@ -138,9 +140,8 @@ h1 {
 h2 {
   font-size: 2.3rem;
   text-align: center;
-  padding: 20px;
+  padding:var(--padding-h2);
   color: var(--main-red);
-  margin-bottom: 40px;
 }
 
 h3 {
@@ -153,7 +154,7 @@ h4 {
 
 /* Sections */
 section {
-  padding: 50px;
+  padding: var(--padding-section);
 }
 
 /* Welcome Section */
@@ -173,13 +174,7 @@ section {
   color: var(--main-red);
 }
 
-/* Who We Are Section */
-#who-we-are {
-  background-color: #fefefe;
-  color: var(--main-black);
-  text-align: justify;
-}
-
+/* all the text containers */
 .text-container {
   display: flex;
   justify-content: center;
@@ -199,16 +194,31 @@ section {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .text-container {
+    flex-direction: column;
+  }
+  .text-left, .text-right {
+    max-width: 70vw;
+    font-size: 0.8rem
+  }
+}
+
 .text-left,
 .text-right {
   text-align: justify;
   width: 400px;
 }
 
+/* Who We Are Section */
+#who-we-are {
+  background-color: #fefefe;
+  color: var(--main-black);
+}
+
 /* Staff Section */
 #staff {
   background-color: var(--main-white);
-  padding-top: 40px;
   text-align: center;
   padding: 10rem 2rem;
 }
