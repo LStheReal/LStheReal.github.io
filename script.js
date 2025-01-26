@@ -2,9 +2,6 @@ var picture_frame = document.getElementById("picture-frame");
 var img = document.createElement("IMG");
 picture_frame.appendChild(img);
 
-img.width = "400";  
-img.height = "267"; 
-
       img.src = "${resourcesFolderName}/Pasted.jpg"; // the first image to show on load
 
 var counter = 0;
