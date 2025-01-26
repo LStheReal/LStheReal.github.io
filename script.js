@@ -43,3 +43,43 @@ img.onerror = function () {
   img.src = `${resourcesFolderName}/error.jpg`; 
 
 }
+
+
+
+var sidebar_staff = getElementById("staff");
+var sidebar_players = getElementById("players");
+var sidebar_who_we_are = getElementById("who-we-are");
+var sidebar_gastfamilien = getElementById("Gastfamilien");
+var sidebar_slider = getElementById("slider");
+var sidebar_schule = getElementById("Schule");
+var sidebar_contact = getElementById("contact");
+var checkbox = getElementById("checkbox");
+
+
+sidebar_staff.addEventListener("click", () => {
+  checkbox.checked = false;
+})
+
+sidebar_players.addEventListener("click", () => {
+  checkbox.checked = false;
+})
+
+sidebar_who_we_are.addEventListener("click", () => {
+  checkbox.checked = false;
+})
+
+sidebar_gastfamilien.addEventListener("click", () => {
+  checkbox.checked = false;
+})
+
+sidebar_slider.addEventListener("click", () => {
+  checkbox.checked = false;
+})
+
+sidebar_schule.addEventListener("click", () => {
+  checkbox.checked = false;
+})
+
+sidebar_contact.addEventListener("click", () => {
+  checkbox.checked = false;
+})

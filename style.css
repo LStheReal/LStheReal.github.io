@@ -13,7 +13,7 @@
   --transition-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
-  --padding-section: calc(var(hamburger-width) + var(hamburger-margin) * 2);
+  --padding-section: 50px;
   --padding-h2: 30px;
 }
 
@@ -267,11 +267,11 @@ img {
 }
 
 /* Fotogallery Section */
-#fotogallery {
+#slider {
   background-color: #fefefe;
 }
 
-#fotogallery-container {
+#slider-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -285,7 +285,7 @@ img {
   margin: 20px auto;
 }
 
-#fotogallery>img {
+#slider>img {
   transition: opacity 0.5s ease-in-out;
 }
 
