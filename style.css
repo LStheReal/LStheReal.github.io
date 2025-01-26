@@ -284,6 +284,10 @@ img {
   margin: 20px auto;
 }
 
+#fotogallery>img {
+  transition: opacity 0.5s ease-in-out;
+}
+
 /* Schule Section */
 #Schule {
   background-color: var(--main-white);
