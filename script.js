@@ -47,14 +47,14 @@ img.onerror = function () {
 
 // sidebar closing whe a link is clicked
 
-var sidebar_staff = getElementById("staff");
-var sidebar_players = getElementById("players");
-var sidebar_who_we_are = getElementById("who-we-are");
-var sidebar_gastfamilien = getElementById("Gastfamilien");
-var sidebar_slider = getElementById("slider");
-var sidebar_schule = getElementById("Schule");
-var sidebar_contact = getElementById("contact");
-var checkbox = getElementById("checkbox");
+var sidebar_staff = getElementById("a1");
+var sidebar_players = getElementById("a2");
+var sidebar_who_we_are = getElementById("a3");
+var sidebar_gastfamilien = getElementById("a4");
+var sidebar_slider = getElementById("a5");
+var sidebar_schule = getElementById("a6");
+var sidebar_contact = getElementById("a7");
+var checkbox = getElementById("hamburger-checkbox");
 
 
 sidebar_staff.addEventListener("click", () => {
