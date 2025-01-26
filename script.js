@@ -1,15 +1,13 @@
 //slider
 //create a slider pictures file with the name: slider_pictures
-var picture_frame = document.getElementById("picture-frame");
-var figcaption = document.getElementById("fotogallery-text")
+var figcaption = document.getElementById("slider-text")
 var arrow_right = document.getElementById("arrow_right"); 
 var arrow_left = document.getElementById("arrow_left"); 
-
-var img = document.createElement("IMG");
-picture_frame.appendChild(img);
+var picture_frame = document.getElementById("picture-frame");
 
 var resourcesFolderName = "slider_pictures"; 
-img.src = `${resourcesFolderName}/1.jpg`; 
+
+picture_frame.src = `${resourcesFolderName}/1.jpg`;
 
 var counter = 0;
 var images = ["1", "2", "3", "4"]; 
