@@ -3,11 +3,11 @@
 var figcaption = document.getElementById("slider-text")
 var arrow_right = document.getElementById("arrow_right"); 
 var arrow_left = document.getElementById("arrow_left"); 
-var picture_frame = document.getElementById("picture-frame");
+var img = document.getElementById("picture-frame");
 
 var resourcesFolderName = "slider_pictures"; 
 
-picture_frame.src = `${resourcesFolderName}/1.jpg`;
+img.src = `${resourcesFolderName}/1.jpg`;
 
 var counter = 0;
 var images = ["1", "2", "3", "4"]; 
