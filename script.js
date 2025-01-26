@@ -1,3 +1,4 @@
+//slider
 //create a slider pictures file with the name: slider_pictures
 var picture_frame = document.getElementById("picture-frame");
 var figcaption = document.getElementById("fotogallery-text")
@@ -44,7 +45,7 @@ img.onerror = function () {
 
 }
 
-
+// sidebar closing whe a link is clicked
 
 var sidebar_staff = getElementById("staff");
 var sidebar_players = getElementById("players");
