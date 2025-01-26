@@ -9,6 +9,7 @@ var resourcesFolderName = "slider_pictures";
 
 img.src = `${resourcesFolderName}/1.jpg`;
 
+
 var counter = 0;
 var images = ["1", "2", "3", "4"]; 
 var figcaptions = ["1", "2", "3", "4"]
