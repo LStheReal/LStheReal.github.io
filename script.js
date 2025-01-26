@@ -1,3 +1,4 @@
+//create a slider pictures file with the name: slider_pictures
 var picture_frame = document.getElementById("picture-frame");
 var figcaption = document.getElementById("fotogallery-text")
 var arrow_right = document.getElementById("arrow_right"); 
@@ -6,7 +7,7 @@ var arrow_left = document.getElementById("arrow_left");
 var img = document.createElement("IMG");
 picture_frame.appendChild(img);
 
-var resourcesFolderName = "path_to_your_resources"; // Replace with your actual folder path
+var resourcesFolderName = "slider_pictures"; 
 img.src = `${resourcesFolderName}/1.jpg`; 
 
 var counter = 0;
@@ -26,8 +27,9 @@ arrow_left.addEventListener("click", function () {
   counter -= 1; 
   if (counter < 0) {
     counter = images.length - 1;
+  }
   img.src = `${resourcesFolderName}/${images[counter]}.jpg`; 
-
+  figcaption.innerText = figcaptions.value[counter] // maybee remove the value
 });
 
 var preloadedImages = images.map(name => {
@@ -39,4 +41,5 @@ var preloadedImages = images.map(name => {
 img.onerror = function () {
   console.error("Failed to load image:", img.src);
   img.src = `${resourcesFolderName}/error.jpg`; 
+
 }
