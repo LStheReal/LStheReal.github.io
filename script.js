@@ -13,7 +13,6 @@ img.src = `${resourcesFolderName}/1.jpg`;
 
 var counter = 0;
 var images = ["1", "2", "3", "4"]; 
-var figcaptions = ["1", "2", "3"] // add the figcaption text of the images -> within 1 the figcaption of 1 and so on
 
 arrow_right.addEventListener("click", function () {
   counter += 1;
@@ -21,7 +20,6 @@ arrow_right.addEventListener("click", function () {
     counter = 0; 
   }
   img.src = `${resourcesFolderName}/${images[counter]}.jpg`; 
-  figcaption.innerText = figcaptions.value[counter] // maybee remove the value
 });
 
 arrow_left.addEventListener("click", function () {
@@ -47,14 +45,14 @@ img.onerror = function () {
 
 // sidebar closing whe a link is clicked
 
-var sidebar_staff = getElementById("a1");
-var sidebar_players = getElementById("a2");
-var sidebar_who_we_are = getElementById("a3");
-var sidebar_gastfamilien = getElementById("a4");
-var sidebar_slider = getElementById("a5");
-var sidebar_schule = getElementById("a6");
-var sidebar_contact = getElementById("a7");
-var checkbox = getElementById("hamburger-checkbox");
+var sidebar_staff = document.getElementById("a1");
+var sidebar_players = document.getElementById("a2");
+var sidebar_who_we_are = document.getElementById("a3");
+var sidebar_gastfamilien = document.getElementById("a4");
+var sidebar_slider = document.getElementById("a5");
+var sidebar_schule = document.getElementById("a6");
+var sidebar_contact = document.getElementById("a7");
+var checkbox = document.getElementById("hamburger-checkbox");
 
 
 sidebar_staff.addEventListener("click", () => {
