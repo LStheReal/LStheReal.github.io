@@ -296,6 +296,10 @@ img {
   transition: opacity 0.5s ease-in-out;
 }
 
+figcaption {
+  color: var(--main-black);
+}
+
 /* Schule Section */
 #Schule {
   background-color: var(--main-white);

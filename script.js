@@ -8,7 +8,7 @@ var img = document.getElementById("picture-frame");
 var resourcesFolderName = "slider_pictures"; 
 
 img.src = `${resourcesFolderName}/1.jpg`;
-
+figcaption.innerText = "1";
 
 var counter = 0;
 var images = ["1", "2", "3", "4"]; 
