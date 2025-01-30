@@ -135,7 +135,8 @@ h2 {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
+  font-weight: bolder;
 }
 
 h2 {
@@ -165,16 +166,23 @@ section {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  background-image: url("portraits/azTeamfoto.jpg");
 }
 
 #welcome-section>p {
   font-size: 1.5rem;
   font-weight: 200;
   font-style: italic;
-  color: var(--main-red);
+  color: var(--main-blue);
+  font-weight: bolder;
 }
 
+#team-foto {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: -1;
+}
 /* all the text containers */
 .text-container {
   display: flex;
