@@ -165,8 +165,12 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-image: url("portraits/azTeamfoto.jpg");
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  background-position: center center;
 }
 
 #welcome-section>p {
@@ -175,13 +179,6 @@ section {
   font-style: italic;
   color: var(--main-blue);
   font-weight: bolder;
-}
-
-#team-foto {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  z-index: -1;
 }
 /* all the text containers */
 .text-container {
