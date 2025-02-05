@@ -50,7 +50,7 @@ body {
   gap: var(--hamburger-gap);
   position: fixed;
   top: var(--hamburger-margin);
-  left: var(--hamburger-margin);
+  right: var(--hamburger-margin);
   z-index: 3;
   cursor: pointer;
 }
@@ -64,7 +64,7 @@ body {
   background-color: var(--main-blue);
   border-radius: 99999px;
   transition: opacity var(--transition-timing), width var(--transition-timing), rotate var(--transition-timing), translate var(--transition-timing), background-color var(--transition-timing);
-  transform-origin: left center;
+  transform-origin: right center;
 }
 
 .hamburger-menu input {
@@ -76,14 +76,14 @@ body {
 }
 
 .hamburger-menu:has(input:checked)::before {
-  rotate: 45deg;
+  rotate: -45deg;
   width: var(--x-width);
   translate: 0 calc(var(--bar-height) / -2);
   background-color: var(--main-white);
 }
 
 .hamburger-menu:has(input:checked)::after {
-  rotate: -45deg;
+  rotate: 45deg;
   width: var(--x-width);
   translate: 0 calc(var(--bar-height) / 2);
   background-color: var(--main-white);
@@ -97,7 +97,7 @@ body {
 
 .sidebar {
   transition: translate var(--transition-timing);
-  translate: -100%;
+  translate: 100%;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
   background-color: var(--main-blue);
   color: var(--main-white);
@@ -105,6 +105,8 @@ body {
   z-index: 2;
   position: fixed;
   height: 100vh;
+  align-items: right;
+  right: 0;
 }
 
 .hamburger-menu:has(input:checked)+.sidebar {
@@ -120,7 +122,8 @@ ul a {
 
 ul {
   list-style: none;
-  margin-left: var(--hamburger-margin);
+  margin-right: var(--hamburger-margin);
+  text-align: right;
 }
 
 ul a:hover {
