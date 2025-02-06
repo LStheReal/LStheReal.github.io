@@ -171,6 +171,7 @@ h3 {
 
 h4 {
   color: var(--main-blue);
+  margin: 15px 0;
 }
 
 /* Sections */
@@ -274,7 +275,6 @@ section {
   border-radius: 10px;
 }
 
-#player-cards,
 #staff-cards {
   display: flex;
   flex-wrap: wrap;
