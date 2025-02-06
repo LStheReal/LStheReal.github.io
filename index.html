@@ -17,407 +17,71 @@ Il va demander de choisir un dossier sur l'ordi ou mettre les fichiers. Choisi "
 
 -->
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>AZ/CF Biel/Bienne/</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ausbildungszentrum</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<main>
-  <header><img src="portraits/Logo_SFV_grau.jpg"/></header>
-  <body>
 
-    <label class="hamburger-menu">
+<body>
+  <header>
+    <div id="logo-container">
+      <img id="logo" src="logo.png" alt="Ausbildungszentrum Logo">
+    </div>
+
+    <label class="hamburger-menu" aria-label="Menu">
       <input id="hamburger-checkbox" type="checkbox" />
+      <span class="hamburger-icon"></span>
     </label>
-    <aside class="sidebar">
-      <nav id="navbar">
-        <ul class="nav-list">
-          <li>
-            <a id="a1" href="#who-we-are">Das sind wir / C'est nous</a>
-          </li>
-          <li>
-            <a id="a2" href="#staff">Staff</a>
-          </li>
-          <li>
-            <a id="a3" href="#players">Spielerinnen/joueuses</a>
-          </li>
-          <li>
-            <a id="a4" href="#Gastfamilien">Gastfamilien/familles d'accueil</a>
-          </li>
-          <li>
-            <a id="a5" href="#slider">Einblicke/aperçus</a>
-          </li>
-          <li>
-            <a id="a6" href="#Schule">Schule/école</a>
-          </li>
-          <li>
-            <a id="a7" href="#contact">Kontakt/contact</a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
 
-    <section id="welcome-section"> 
-        <h1 id="title">AZ/CF Biel/Bienne</h1>
-        <p id="year">2024/25</p>
-    </section>
+    <nav>
+      <ul>
+        <li><a href="#who-we-are">Wer wir sind</a></li>
+        <li><a href="#staff">Unser Team</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
     <section id="who-we-are">
-      <div class="text-container">
-        <div class="text-left">
-          <h2 id="who-we-are-title">Das sind wir</h2>
-          <p id="who-we-are-text">
-            Unser Ausbildungszentrum bietet talentierten Fußballerinnen die perfekte Kombination aus Spitzensport und
-            schulischer Ausbildung. In Biel bereiten wir junge Spielerinnen gezielt auf ihre Karriere vor – sowohl
-            sportlich als auch akademisch.<br>
-            <br>
-          <h4>Unsere Mission</h4><br>
-          Wir fördern Talente und bieten ihnen eine optimale Basis für eine erfolgreiche Fußballkarriere. Dabei legen
-          wir großen Wert auf Persönlichkeitsentwicklung, schulische Bildung und individuelle Karriereplanung.<br>
-          <br>
-          <h4>Das Ausbildungsangebot</h4><br>
-          Jährlich nehmen wir rund zehn Spielerinnen pro Jahrgang auf. Unter der Anleitung der SFV-Nationaltrainer
-          trainieren sie während der Woche, während sie am Wochenende in den Teams ihrer Vereine spielen. Ziel ist es,
-          unsere Spielerinnen für die SFV-Auswahlteams vorzubereiten.<br>
-          <br>
-          <h4>Unser Standort: Sportstadt Biel</h4><br>
-          Biel bietet ideale Bedingungen: Mit seiner zentralen Lage, der Zweisprachigkeit und der Nähe zur Sportschule
-          Magglingen ist die Stadt ein perfekter Trainingsort. Neun Schulen in Biel gewährleisten eine gleichwertige
-          schulische Ausbildung in Deutsch und Französisch.</p>
-        </div>
-        <div class="text-right">
-          <h2>C'est nous</h2>
-          <p>
-            Notre centre de formation offre aux footballeuses talentueuses la combinaison parfaite entre sport de haut
-            niveau et formation scolaire. À Bienne, nous préparons les jeunes joueuses de manière ciblée pour leur
-            carrière, tant sur le plan sportif qu'académique.<br> <br>
-          <h4>Notre mission</h4>
-          <br>
-          Nous soutenons les talents et leur offrons une base optimale pour une carrière footballistique réussie. Nous
-          mettons particulièrement l'accent sur le développement de la personnalité, la formation scolaire et la
-          planification individuelle de la carrière<br>
-          <br>
-          <h4>L'offre de formation</h4>
-          <br>
-          Chaque année, nous accueillons environ dix joueuses par promotion. Sous la direction des entraîneurs nationaux
-          de l'ASF, elles s'entraînent pendant la semaine, tandis qu'elles jouent le week-end dans les équipes de leurs
-          clubs. L'objectif est de préparer nos joueuses pour les équipes nationales de l'ASF.<br>
-          <br>
-          <h4>Notre site : la ville sportive de Bienne</h4>
-          <br> Bienne offre des conditions idéales : avec son emplacement central, son bilinguisme et la proximité de
-          l'École de Sport de Macolin, la ville est un lieu d'entraînement parfait. Neuf écoles à Bienne garantissent
-          une formation scolaire équivalente en allemand et en français.</p>
-        </div>
-      </div>
+      <h2>Wer wir sind</h2>
+      <p id="who-we-are-text">
+        Unser Ausbildungszentrum bietet talentierten Fußballerinnen die Möglichkeit, ihr sportliches Potenzial voll auszuschöpfen.
+        Wir glauben an harte Arbeit, Teamgeist und die Kraft der Leidenschaft.<br>
+      </p>
+      <h4>Unsere Mission</h4>
+      <p>Wir fördern Talente und bieten ihnen eine optimale Basis für sportlichen und persönlichen Erfolg.</p>
     </section>
 
     <section id="staff">
-      <h2 id="staff-title">Staff</h2>
+      <h2>Unser Team</h2>
       <div id="staff-cards">
-
         <div class="card">
-          <img src="portraits/herrmeister.jpeg" alt="Foto of Staff member">
-          <h3 id="staff-name">David Meister</h3>
-          <p id="staff-job">Leiter AZ</p>
-          <p id="staff-job"> Responsable CP</p>
+          <img class="staff-image" src="portraits/david_meister.jpg" alt="David Meister">
+          <h3 class="staff-name">David Meister</h3>
+          <p class="staff-job">Leiter AZ</p>
+          <p class="staff-job">Responsable CP</p>
         </div>
-
         <div class="card">
-          <img src="portraits/fraumeister.jpeg" alt="Foto of Staff member">
-          <h3 id="staff-name">Andrea Meister</h3>
-          <p id="staff-job">Administration</p>
-          <p id="staff-job"><br></p>
+          <img class="staff-image" src="portraits/andrea_meister.jpg" alt="Andrea Meister">
+          <h3 class="staff-name">Andrea Meister</h3>
+          <p class="staff-job">Trainerin</p>
         </div>
-
         <div class="card">
-          <img src="portraits/fraumaglia.jpg" alt="Foto of Staff member">
-          <h3 id="staff-name">Veronica Maglia</h3>
-          <p id="staff-job">Nationaltrainer FNT U-19</p>
-          <p id="staff-job">entraîneuse national FNT U-19</p>
-        </div>
-
-        <div class="card">
-          <img src="portraits/frauschweer.jpg" alt="Foto of Staff member">
-          <h3 id="staff-name">Jasmin Schweer</h3>
-          <p id="staff-job">Nationaltrainer FNT U-17</p>
-          <p id="staff-job">entraîneuse national FNT U-17</p>
-        </div>
-
-        <div class="card">
-          <img src="portraits/herrkaramann.jpeg" alt="Foto of Staff member">
-          <h3 id="staff-name">Kaan Karamann</h3>
-          <p id="staff-job">Nationaltrainer FNT U-16 </p>
-          <p id="staff-job">entraîneur national FNT U-16 </p>
-        </div>
-
-        <div class="card">
-          <img src="portraits/fraupauli.jpg" alt="Foto of Staff member">
-          <h3 id="staff-name">Melanie Pauli</h3>
-          <p id="staff-job">Athletiktrainerin A-Team</p>
-          <p id="staff-job">entraîneuse athlétique A-Team</p>
-        </div>
-
-        <div class="card">
-          <img src="portraits/melina.jpeg" alt="Foto of Staff member">
-          <h3 id="staff-name">Melina Scodeller</h3>
-          <p id="staff-job">Athletiktrainerin</p>
-          <p id="staff-job">entraîneuse athlétique </p>
-        </div>
-
-        <div class="card">
-          <img src="portraits/herraffolter.jpg" alt="Foto of Staff member">
-          <h3 id="staff-name">Martin Affolter</h3>
-          <p id="staff-job">Torhütertrainer</p>
-          <p id="staff-job">entraîneur des gardiens</p>
-        </div>
-
-        <div class="card">
-          <img src="portraits/fraugsell.jpg" alt="Foto of Staff member">
-          <h3 id="staff-name">Patricia Gsell</h3>
-          <p id="staff-job">Torhütertrainerin A-Team</p>
-          <p id="staff-job">entraîneuse de gardien A-Team</p>
-        </div>
-
-        <div class="card">
-          <img src="portraits/jonas.jpg" alt="Foto of Staff member">
-          <h3 id="staff-name">Jonas Spiess</h3>
-          <p id="staff-job">Physio</p>
-          <p id="staff-job"><br></p>v
-        </div>
-
-
-      </div>
-    </section>
-
-    <section id="players">
-      <h2 id="player-title">Spielerinnen<br>joueuses</h2>
-      <div class="container">
-        <ul class="responsive-table">
-          <li class="table-header">
-            <div class="col col-1">Nummer Nombre</div>
-            <div class="col col-2">Nachname<br>Nom de famille</div>
-            <div class="col col-3">Vorname<br>Prénom</div>
-            <div class="col col-4">Club</div>
-          </li>
-  
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">1</div>
-                <div class="col col-2" data-label="Name">Riesch</div>
-                <div class="col col-3" data-label="Vorname">Madalina</div>
-                <div class="col col-4" data-label="Club">FC Zürich U-18 Frauen</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">2</div>
-                <div class="col col-2" data-label="Name">Maulaz</div>
-                <div class="col col-3" data-label="Vorname">Luna</div>
-                <div class="col col-4" data-label="Club">Team Seeland FE-13</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nombre">3</div>
-                <div class="col col-2" data-label="Nom de famille">Pisquem</div>
-                <div class="col col-3" data-label="Prénom">Lucine</div>
-                <div class="col col-4" data-label="Club"> FC Xamax Montagne FE-14</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nombre">4</div>
-                <div class="col col-2" data-label="Nom de famille">Matos</div>
-                <div class="col col-3" data-label="Prénom">Linda</div>
-                <div class="col col-4" data-label="Club">Lausanne Sport FE-14</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">5</div>
-                <div class="col col-2" data-label="Name">Bandia</div>
-                <div class="col col-3" data-label="Vorname">Soraya</div>
-                <div class="col col-4" data-label="Club">FC Zürich U-18 Frauen</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">6</div>
-                <div class="col col-2" data-label="Name">Blanco</div>
-                <div class="col col-3" data-label="Vorname">Luana</div>
-                <div class="col col-4" data-label="Club">FC Luzern U-18 Frauen</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nombre">7</div>
-                <div class="col col-2" data-label="Nom de famille">Blaser</div>
-                <div class="col col-3" data-label="Prénom">Kenissa</div>
-                <div class="col col-4" data-label="Club">YB M-18 Femmes</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nombre">8</div>
-                <div class="col col-2" data-label="Nom de famille">Raymond</div>
-                <div class="col col-3" data-label="Prénom">Elynn</div>
-                <div class="col col-4" data-label="Club"> FC Sion FE-14</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">9</div>
-                <div class="col col-2" data-label="Name">Brand</div>
-                <div class="col col-3" data-label="Vorname">Lisa</div>
-                <div class="col col-4" data-label="Club">FC Luzern U-18 Frauen</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">10</div>
-                <div class="col col-2" data-label="Name">Schülé</div>
-                <div class="col col-3" data-label="Vorname">Louise</div>
-                <div class="col col-4" data-label="Club">GC Zürich FE-14</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">11</div>
-                <div class="col col-2" data-label="Name">Killer</div>
-                <div class="col col-3" data-label="Vorname">Mia</div>
-                <div class="col col-4" data-label="Club">GC Zürich FE-14</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">12</div>
-                <div class="col col-2" data-label="Name">De Cubellis</div>
-                <div class="col col-3" data-label="Vorname">Ilenia</div>
-                <div class="col col-4" data-label="Club">FC Solothurn FE-14</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">13</div>
-                <div class="col col-2" data-label="Name">Maloki</div>
-                <div class="col col-3" data-label="Vorname">Noela</div>
-                <div class="col col-4" data-label="Club">FC Baden FE-14</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">14</div>
-                <div class="col col-2" data-label="Name">Hummel</div>
-                <div class="col col-3" data-label="Vorname">Lia</div>
-                <div class="col col-4" data-label="Club">FC Sankt-Gallen U-18 Frauen</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">15</div>
-                <div class="col col-2" data-label="Name">Klenk</div>
-                <div class="col col-3" data-label="Vorname">Zoé</div>
-                <div class="col col-4" data-label="Club">FC Zürich FE-14</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">16</div>
-                <div class="col col-2" data-label="Name">Kastrati</div>
-                <div class="col col-3" data-label="Vorname">Eljesa</div>
-                <div class="col col-4" data-label="Club">FC Winterthur FE-14</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">17</div>
-                <div class="col col-2" data-label="Name">Feusi</div>
-                <div class="col col-3" data-label="Vorname">Leja</div>
-                <div class="col col-4" data-label="Club">FC Rapperswil-Jona FE-14</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">18</div>
-                <div class="col col-2" data-label="Name">Schlatter</div>
-                <div class="col col-3" data-label="Vorname">Elena</div>
-                <div class="col col-4" data-label="Club">FC Aarau U-16 Frauen</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nombre">19</div>
-                <div class="col col-2" data-label="Nom de famille">Mettraux</div>
-                <div class="col col-3" data-label="Prénom">Mélissa</div>
-                <div class="col col-4" data-label="Club">Yverdon Sport FE-15</div>
-            </li>
-            <li class="table-row">
-                <div class="col col-1" data-label="Nummer">20</div>
-                <div class="col col-2" data-label="Name">Paul</div>
-                <div class="col col-3" data-label="Vorname">Mara</div>
-                <div class="col col-4" data-label="Club">FCOG Kickers CA</div>
-            </li>
-            <li class="table-row">
-              <div class="col col-1" data-label="Nombre">21</div>
-              <div class="col col-2" data-label="Nom de famille">Zörgiebel</div>
-              <div class="col col-3" data-label="Prénom">Amélie</div>
-              <div class="col col-4" data-label="Club">Lausanne Sport FE-14</div>
-          </li>
-                
-        </ul>
-      </div>
-    </section>
-
-    <section id="Gastfamilien">
-      <div class="text-container">
-        <div class="text-left">
-          <h2 id="Gastfamilien-title">Gastfamilien</h2><br>
-          <p>Die Spielerinnen leben in Gastfamilien in Biel und Umgebung. In jeder Familie wohnen ein bis drei
-            Fußballerinnen. Die Spielerinnen nutzen für alle Transfers, wenn möglich, das Fahrrad. Im Winter nehmen sie
-            den Bus. Sie essen fünfmal pro Woche Frühstück bei der Gastfamilie und am Mittwochabend auch Abendessen. Das
-            Ziel ist es, den Spielerinnen ein möglichst familiäres Umfeld zu bieten, damit sie sich auf den Sport und
-            die Schule konzentrieren können.</p>
-        </div>
-        <div class="text-right">
-          <h2 id="Gastfamilien-title">familles d'accueil</h2>
-          <p>Les joueuses vivent dans des familles d'accueil à Bienne et dans les environs. Dans chaque famille, il y a
-            une à trois footballeuses. Les joueuses utilisent le vélo pour tous leurs déplacements, si possible. En
-            hiver, elles prennent le bus. Elles prennent le petit-déjeuner cinq fois par semaine chez leur famille
-            d'accueil et le dîner le mercredi soir. L'objectif est d'offrir aux joueuses un environnement aussi familial
-            que possible pour qu'elles puissent se concentrer sur le sport et l'école.</p>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="slider">
-      <h2 id="slider-title">Einblicke<br>aperçus</h2>
-      <div id="slider-container">
-        <p id="arrow_left">&lt;</p>
-        <figure>
-          <img id="picture-frame" src="" alt="Image of AZ/CF Biel/Bienne">
-          <figcaption id="slider-text"></figcaption>
-        </figure>
-        <p id="arrow_right">&gt;</p>
-      </div>
-    </section>
-
-    <section id="Schule">
-      <div class="text-container">
-        <div class="text-left">
-          <h2 id="Schule-title">Schule</h2>
-          <p>Die Schule legt großen Wert darauf, die Spielerinnen bestmöglich zu unterstützen. Der Unterricht findet in
-            der Muttersprache der Schülerinnen statt, und sie werden in bestehende Klassen integriert. Dabei werden alle
-            Schulniveaus der Volksschule abgedeckt, sodass jede Schülerin entsprechend ihrer Fähigkeiten gefördert
-            werden kann. Durch das Konzept „Sport-Kultur-Studium“ wird ein Stundenplan erstellt, der an die
-            Trainingszeiten angepasst ist. Ergänzender Unterricht sorgt dafür, dass eventuelle Wissenslücken geschlossen
-            werden. Die Schülerinnen werden außerdem eng durch einen schuleigenen Koordinator betreut, der als zentrale
-            Ansprechperson dient und den Lernfortschritt sowie die schulische Integration unterstützt. Nach der
-            Oberstufe können alle möglichen weiterführenden Schulen oder Berufsausbildungen besucht werden, sofern der
-            Notenschnitt ausreichend ist.</p>
-        </div>
-        <div class="text-right">
-          <h2 id="Schule-title">école</h2>
-          <p>L'école accorde une grande importance au soutien optimal des joueuses. Les cours sont dispensés dans la
-            langue maternelle des élèves, et elles sont intégrées dans des classes existantes. Tous les niveaux
-            scolaires de l'école primaire sont pris en charge, afin que chaque élève puisse être encouragée en fonction
-            de ses compétences. Grâce au concept « Sport-Culture-Études », un emploi du temps est élaboré pour s'adapter
-            aux horaires d'entraînement. Des cours complémentaires permettent de combler d'éventuelles lacunes. Les
-            élèves bénéficient également d'un suivi rapproché par un coordinateur scolaire dédié, qui agit comme
-            personne de référence et veille à leur progression ainsi qu'à leur intégration scolaire. Après le lycée,
-            toutes les écoles secondaires supérieures ou formations professionnelles peuvent être suivies, à condition
-            que la moyenne soit suffisante.</p>
+          <img class="staff-image" src="portraits/jonas_spiess.jpg" alt="Jonas Spiess">
+          <h3 class="staff-name">Jonas Spiess</h3>
+          <p class="staff-job">Fitness-Coach</p>
         </div>
       </div>
     </section>
-</main>
-<footer id="contact">
-  <h2 id="contact-title">Kontakt/contact</h2>
-  <address id="address">
-    David Meister<br>
-    Leiter/directeur AZ/CF Biel/Bienne<br>
-    <a href="mailto:meister.david@football.ch">meister.david@football.ch</a><br>
-    <a href="tel:+416966468">078 696 64 68</a><br>
-    <br>
-    Sekretariat/secrétariat<br>
-    <a href="mailto:az.biel@football.ch">az.biel@football.ch</a><br>
-  </address>
-  <p id="copyright">© Designed and Developed by <a mailto: louise.schuele@gmail.com>Louise Schülé</a></p>
-</footer>
+  </main>
 
-<script src="script.js"></script>
-
+  <footer>
+    <p>© 2025 Ausbildungszentrum. Alle Rechte vorbehalten.</p>
+  </footer>
 </body>
 
 </html>
