@@ -4,6 +4,7 @@
   --main-blue: #456082;
   --main-red: #bf0404;
   --main-white: #f1f1f1;
+  --2nd-white: #eaeaea;
   --main-gray: #b5b5b5;
   --main-black: #303030;
   --bar-width: 50px;
@@ -41,6 +42,20 @@ body {
   color: var(--main-white);
   margin: 0;
   padding: 0;
+}
+
+/* header*/
+header {
+  position: fixed;
+  height: 80px;
+  width: 100vw;
+  background-color: white;
+}
+
+header > img {
+  height: 80px;
+  width: 180px;
+  
 }
 
 /* Hamburger */
@@ -140,6 +155,7 @@ h2 {
 h1 {
   font-size: 4rem;
   font-weight: bolder;
+  color: var(--main-white);
 }
 
 h2 {
@@ -203,7 +219,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .text-container {
     flex-direction: column;
   }
@@ -220,10 +236,14 @@ section {
     font-size: 3rem;
     text-align: center;
   }
-
-
 }
 
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 
 .text-left,
 .text-right {
@@ -233,7 +253,7 @@ section {
 
 /* Who We Are Section */
 #who-we-are {
-  background-color: #fefefe;
+  background-color: var(--2nd-white);
   color: var(--main-black);
 }
 
@@ -268,7 +288,7 @@ section {
 
 /* Players Section */
 #players {
-  background-color: #fefefe;
+  background-color: var(--2nd-white);
   color: var(--main-black)
 }
 
@@ -352,7 +372,7 @@ img {
 
 /* Fotogallery Section */
 #slider {
-  background-color: #fefefe;
+  background-color: var(--2nd-white);
 }
 
 #slider-container {
