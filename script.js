@@ -83,3 +83,16 @@ sidebar_schule.addEventListener("click", () => {
 sidebar_contact.addEventListener("click", () => {
   checkbox.checked = false;
 })
+
+//pin element
+
+const pinElement = document.getElementById("pinElement");
+const pinStart = 470; 
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > pinStart) {
+        pinElement.classList.add("pinned");
+      } else {
+        pinElement.classList.remove("pinned");
+      }
+    });
