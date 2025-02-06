@@ -209,9 +209,12 @@ section {
 
 .pinned {
   position: fixed;
-  color: var(--main-red);
   top: 5px;
+}
 
+.pinned > h1 {
+  color: var(--main-red);
+  transition-duration: 1s;
 }
 /* all the text containers */
 .text-container {

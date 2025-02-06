@@ -87,7 +87,7 @@ sidebar_contact.addEventListener("click", () => {
 //pin element
 
 const pinElement = document.getElementById("pinElement");
-const pinStart = 470; 
+const pinStart = 465; 
 
     window.addEventListener("scroll", () => {
       if (window.scrollY > pinStart) {
