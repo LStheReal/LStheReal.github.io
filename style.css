@@ -14,7 +14,7 @@
   --transition-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
-  --padding-section: 50px;
+  --padding-section: 20px;
   --padding-h2: 30px;
 }
 
@@ -40,6 +40,7 @@ body {
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--main-white);
+  background: linear-gradient(93deg, var(--main-blue), var(--main-red)); /* Add gradient background */
   margin: 0;
   padding: 0;
 }
@@ -185,14 +186,16 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("portraits/azTeamfoto.jpg");
-  width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  padding: 0;
-  background-position: center center;
+
+  background-image: url('portraits/azTeamfoto.jpg');
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
+  padding-bottom: 0;
+
 }
+
 
 #pinElement>p {
   font-size: 1.5rem;
@@ -282,6 +285,12 @@ section {
   }
 }
 
+@media only screen and (max-width: 570px) {
+  .pinned {
+    display: none;
+  }
+}
+
 .text-left,
 .text-right {
   text-align: justify;
@@ -292,6 +301,7 @@ section {
 #who-we-are {
   background-color: var(--2nd-white);
   color: var(--main-black);
+  
 }
 
 /* Staff Section */
