@@ -123,6 +123,7 @@ header > img {
   height: 100vh;
   align-items: right;
   right: 0;
+  overflow: auto;
 }
 
 .hamburger-menu:has(input:checked)+.sidebar {
