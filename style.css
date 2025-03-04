@@ -141,6 +141,7 @@ ul {
   list-style: none;
   margin-right: var(--hamburger-margin);
   text-align: right;
+  overflow: auto;
 }
 
 ul a:hover {
@@ -447,16 +448,18 @@ figcaption {
 
 /* Footer */
 footer {
-  background-color: var(--main-red);
-  color: var(--main-white);
+  background: linear-gradient(300deg, var(--main-blue), var(--main-red)); /* Add gradient background */
+  color: var(--main-black);
   padding: 20px;
+  ;
 }
 
 footer>h2 {
-  color: var(--main-black);
+  color: var(--main-white);
   text-align: left;
   text-decoration: none;
   font-size: 1.8rem;
+  padding-left: 15px
 }
 
 address {
@@ -466,10 +469,19 @@ address {
 }
 
 address>a {
-  color: var(--main-black);
+  color: var(--main-white);
 }
 
 #copyright {
   text-align: right;
   font-size: 0.8rem;
+  color: var(--main-gray);
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  #copyright {
+    text-align: left;
+
+  }
 }
