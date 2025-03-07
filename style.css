@@ -317,9 +317,9 @@ section {
   max-width: 320px;
   margin: 0 auto 3rem;
   border-bottom: 0.2rem solid var(--main-white);
-  background-color: var(--main-gray);
+  background: linear-gradient(165deg, var(--main-blue), var(--main-red)); /* Add gradient background */
   padding: 20px;
-  color: var(--main-blue);
+  color: var(--main-white);
   border-radius: 10px;
 }
 
