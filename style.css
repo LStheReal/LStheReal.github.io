@@ -172,7 +172,7 @@ h3 {
   font-weight: bold;
 }
 
-h4 {
+.who-we-are-subheadings {
   color: var(--main-blue);
   margin: 15px 0;
 }
