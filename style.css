@@ -468,7 +468,7 @@ address {
   margin-top: auto;
 }
 
-address>a {
+footer a {
   color: var(--main-white);
 }
 
